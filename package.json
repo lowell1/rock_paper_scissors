@@ -1,0 +1,24 @@
+{
+  "name": "rock_paper_scissors",
+  "version": "1.0.0",
+  "description": "Rock Paper Scissors game from codementor",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w sass -o public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lowell1/rock_paper_scissors.git"
+  },
+  "author": "",
+  "license": "GNU GPL",
+  "bugs": {
+    "url": "https://github.com/lowell1/rock_paper_scissors/issues"
+  },
+  "homepage": "https://github.com/lowell1/rock_paper_scissors#readme"
+}
