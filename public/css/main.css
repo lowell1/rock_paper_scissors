@@ -1,2 +1,9 @@
+.is_hidden {
+  display: hidden; }
+
+.is_display_none {
+  display: none; }
+
 body {
-  background-color: blue; }
+  background-image: linear-gradient(#1f3756, #141539);
+  height: 100vh; }
