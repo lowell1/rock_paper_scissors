@@ -1,4 +1,4 @@
-@import "vars";
+@import "./_vars.scss";
 
 .is_hidden {
     display: hidden;
@@ -12,3 +12,78 @@ body {
     background-image: $bg_gradient;
     height: 100vh;
 }
+
+#container {
+    width: $mobile_width;
+    margin: 0 auto;
+
+    * {
+        color: white;
+        font-family: $main_font;
+        font-weight: $font_light;
+    }
+
+    #header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 1px solid $header_outline;
+        border-radius: $radius_small;
+        padding: $gap_small;
+        
+        .left {
+            padding: $gap_small;
+    
+            p {
+                margin: 0;
+            }
+        }
+    
+        .right {
+            background-color: white;
+            width: 8rem;
+            height: 8rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: $radius_small;
+    
+            p {
+                margin: 0;
+                text-align: center;
+                color: $score_text;
+            }
+    
+            #score {
+                color: $dark_text;
+                font-size: $font_large;
+                font-weight: $font_heavy;
+            }
+        }
+    }
+
+    #moves {
+        width: 100%;
+        
+        > img {
+            width: 57%;
+        }
+    }
+}
+
+// .flex_right {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .flex_down {
+//     display: flex;
+//     flex-direction: column;
+//     align-content: space-between;
+// }
+
+// #container {
+//     > * {
+//         border: 2px solid red;
+//     }
+// }
