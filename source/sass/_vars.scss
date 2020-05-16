@@ -15,6 +15,16 @@ $lizard_gradient: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
 $spock_gradient: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
 $bg_gradient: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 
+// shadows
+$scissors_shadow: hsl(40, 84%, 53%);
+$paper_shadow: hsl(230, 89%, 65%);
+$rock_shadow: hsl(349, 70%, 56%);
+$lizard_shadow: hsl(261, 72%, 63%);
+$spock_shadow: hsl(189, 58%, 57%);
+$bg_shadow: hsl(237, 49%, 15%);
+
+$shadow_small: 4px;
+
 // font colors
 $dark_text: hsl(229, 25%, 31%);
 $score_text: hsl(229, 64%, 46%);

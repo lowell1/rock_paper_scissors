@@ -85,11 +85,11 @@ body {
                 // background-color: orange;
                 padding: 10px;
                 border-radius: 50%;
-                box-shadow: 0 3px;
 
                 //divs containing icons
                 > div {
-                    box-shadow: 0 -3px lightgrey;
+                    box-shadow: 0 (-$shadow_small) lightgrey;
+                    // box-shadow: 0 -$shadow_small lightgrey;
                     height: 10rem;
                     width: 10rem;
                     border-radius: 50%;
@@ -121,22 +121,27 @@ body {
 
         #scissors {
             background-image: $scissors_gradient;
+            box-shadow: 0 $shadow_small $scissors_shadow;
         }
 
         #spock {
             background-image: $spock_gradient;
+            box-shadow: 0 $shadow_small $spock_shadow;
         }
 
         #rock {
             background-image: $rock_gradient;
+            box-shadow: 0 $shadow_small $rock_shadow;
         }
 
         #paper {
             background-image: $paper_gradient;
+            box-shadow: 0 $shadow_small $paper_shadow;
         }
 
         #lizard {
             background-image: $lizard_gradient;
+            box-shadow: 0 $shadow_small $lizard_shadow;
         }
     }
 }
