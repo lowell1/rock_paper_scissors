@@ -1,7 +1,7 @@
-.is_hidden {
+.display_hidden {
   display: hidden; }
 
-.is_display_none {
+.display_none {
   display: none; }
 
 body {
