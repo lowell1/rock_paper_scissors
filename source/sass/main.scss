@@ -27,7 +27,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        border: 1px solid $header_outline;
+        border: $border_small solid $header_outline;
         border-radius: $radius_small;
         padding: $gap_small;
         
@@ -80,15 +80,24 @@ body {
             display: flex;
             justify-content: space-between;
 
-            //divs containing icons
-            div {
-                height: 10rem;
-                width: 10rem;
+            // circle gradient backgrounds
+            > div {
+                // background-color: orange;
+                padding: 10px;
                 border-radius: 50%;
-                background-color: white;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
+                box-shadow: 0 3px;
+
+                //divs containing icons
+                > div {
+                    box-shadow: 0 -3px lightgrey;
+                    height: 10rem;
+                    width: 10rem;
+                    border-radius: 50%;
+                    background-color: white;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
             }
         }
 
@@ -108,6 +117,26 @@ body {
             top: calc(97% - 2.5rem);
             width: calc(40% + 5rem);
             left: calc(30% - 2.5rem);
+        }
+
+        #scissors {
+            background-image: $scissors_gradient;
+        }
+
+        #spock {
+            background-image: $spock_gradient;
+        }
+
+        #rock {
+            background-image: $rock_gradient;
+        }
+
+        #paper {
+            background-image: $paper_gradient;
+        }
+
+        #lizard {
+            background-image: $lizard_gradient;
         }
     }
 }
