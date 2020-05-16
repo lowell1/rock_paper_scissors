@@ -13,7 +13,7 @@
 </head>
 <body>
   <div id="container">
-    <header id="header">
+    <header id="header" role="banner">
       <div class="left">
         <p>ROCK</p>
         <p>PAPER</p>
@@ -27,21 +27,31 @@
           <p id="score">0</p>
         </div>
       </div>
-    </div>
-    <div id="">
+    </header>
+    <main role="main">
       <img src="/public/images/bg-pentagon.svg" alt="pentagon">
-      <div>
-        <img src="/public/images/icon-scissors.svg" alt="scissors">
+      <div class="row1">
+        <div id="scissors">
+          <img src="/public/images/icon-scissors.svg" alt="scissors">
+        </div>
       </div>
-      <div>
-        <img src="/public/images/icon-spock.svg" alt="spock">
-        <img src="/public/images/icon-paper.svg" alt="paper">
+      <div class="row2">
+        <div id="spock">
+          <img src="/public/images/icon-spock.svg" alt="spock">
+        </div>
+        <div id="paper">
+          <img src="/public/images/icon-paper.svg" alt="paper">
+        </div>
       </div>
-      <div>
-        <img src="/public/images/icon-lizard.svg" alt="lizard">
-        <img src="/public/images/icon-rock.svg" alt="rock">
+      <div class="row3">
+        <div id="lizard">
+          <img src="/public/images/icon-lizard.svg" alt="lizard">
+        </div>
+        <div id="rock">
+          <img src="/public/images/icon-rock.svg" alt="rock">
+        </div>
       </div>
-    </div>
+    </main>
     <button>RULES</button>
   </div>
 </body>
