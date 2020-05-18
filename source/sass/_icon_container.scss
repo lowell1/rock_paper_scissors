@@ -17,25 +17,25 @@
         justify-content: space-between;
 
         // circle gradient backgrounds
-        > div {
-            padding: 10px;
-            border-radius: 50%;
+        // > div {
+        //     padding: 10px;
+        //     border-radius: 50%;
 
-            //divs containing icons
-            > div {
-                box-shadow: 0 (-$shadow_small) lightgrey;
-                // box-shadow: 0 -$shadow_small lightgrey;
-                // height: 10rem;
-                // width: 10rem;
-                height: 15vw;
-                width: 15vw;
-                border-radius: 50%;
-                background-color: white;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-            }
-        }
+        //     //divs containing icons
+        //     > div {
+        //         box-shadow: 0 (-$shadow_small) lightgrey;
+        //         // box-shadow: 0 -$shadow_small lightgrey;
+        //         // height: 10rem;
+        //         // width: 10rem;
+        //         height: 15vw;
+        //         width: 15vw;
+        //         border-radius: 50%;
+        //         background-color: white;
+        //         display: flex;
+        //         justify-content: space-around;
+        //         align-items: center;
+        //     }
+        // }
     }
 
     .row1 {
@@ -48,9 +48,6 @@
         top: 20%;
         width: 76%;
         left: 12%;
-        // top: calc(36% - 2.5rem);
-        // width: calc(60% + 5rem);
-        // left: calc(20% - 2.5rem);
     }
 
     .row3 {

@@ -1,0 +1,21 @@
+.icon {
+    padding: 0.7vw;
+    border-radius: 50%;
+
+    //divs containing icons
+    > div {
+        box-shadow: 0 (-$shadow_small) lightgrey;
+        // box-shadow: 0 (-$shadow_small) lightgrey;
+        height: 15vw;
+        width: 15vw;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            width: 30%;
+        }
+    }
+}
