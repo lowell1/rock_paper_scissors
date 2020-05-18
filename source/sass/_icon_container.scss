@@ -1,0 +1,86 @@
+#iconContainer {
+    width: 100%;
+    margin: 10rem 0;
+    position: relative;
+    
+    // pentagon
+    > img {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    // rows
+    > div {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+
+        // circle gradient backgrounds
+        > div {
+            padding: 10px;
+            border-radius: 50%;
+
+            //divs containing icons
+            > div {
+                box-shadow: 0 (-$shadow_small) lightgrey;
+                // box-shadow: 0 -$shadow_small lightgrey;
+                // height: 10rem;
+                // width: 10rem;
+                height: 15vw;
+                width: 15vw;
+                border-radius: 50%;
+                background-color: white;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+    }
+
+    .row1 {
+        top: -16%;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .row2 {
+        top: 20%;
+        width: 76%;
+        left: 12%;
+        // top: calc(36% - 2.5rem);
+        // width: calc(60% + 5rem);
+        // left: calc(20% - 2.5rem);
+    }
+
+    .row3 {
+        top: 80%;
+        width: 52%;
+        left: 24%;
+    }
+
+    #scissors {
+        background-image: $scissors_gradient;
+        box-shadow: 0 $shadow_small $scissors_shadow;
+    }
+
+    #spock {
+        background-image: $spock_gradient;
+        box-shadow: 0 $shadow_small $spock_shadow;
+    }
+
+    #rock {
+        background-image: $rock_gradient;
+        box-shadow: 0 $shadow_small $rock_shadow;
+    }
+
+    #paper {
+        background-image: $paper_gradient;
+        box-shadow: 0 $shadow_small $paper_shadow;
+    }
+
+    #lizard {
+        background-image: $lizard_gradient;
+        box-shadow: 0 $shadow_small $lizard_shadow;
+    }
+}

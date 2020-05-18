@@ -1,10 +1,14 @@
-@import "./_vars.scss";
+@import "vars";
+@import "rules";
+@import "header";
+@import "icon_container";
 
-.display_hidden {
+
+.displayHidden {
     display: hidden;
 }
 
-.display_none {
+.displayNone {
     display: none;
 }
 
@@ -21,144 +25,5 @@ body {
         color: white;
         font-family: $main_font;
         font-weight: $font_light;
-    }
-
-    #header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        border: $border_small solid $header_outline;
-        border-radius: $radius_small;
-        padding: $gap_small;
-        
-        .left {
-            padding: $gap_small;
-    
-            p {
-                margin: 0;
-            }
-        }
-    
-        .right {
-            background-color: white;
-            width: 8rem;
-            height: 8rem;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            border-radius: $radius_small;
-    
-            p {
-                margin: 0;
-                text-align: center;
-                color: $score_text;
-            }
-    
-            #score {
-                color: $dark_text;
-                font-size: $font_large;
-                font-weight: $font_heavy;
-            }
-        }
-    }
-
-    main {
-        width: 100%;
-        margin: 10rem 0;
-        position: relative;
-        
-        // pentagon
-        > img {
-            display: block;
-            width: 60%;
-            margin: 0 auto;
-        }
-
-        // rows
-        > div {
-            position: absolute;
-            display: flex;
-            justify-content: space-between;
-
-            // circle gradient backgrounds
-            > div {
-                // background-color: orange;
-                padding: 10px;
-                border-radius: 50%;
-
-                //divs containing icons
-                > div {
-                    box-shadow: 0 (-$shadow_small) lightgrey;
-                    // box-shadow: 0 -$shadow_small lightgrey;
-                    height: 10rem;
-                    width: 10rem;
-                    border-radius: 50%;
-                    background-color: white;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                }
-            }
-        }
-
-        .row1 {
-            top: -5rem;
-            justify-content: space-around;
-            width: 100%;
-        }
-
-        .row2 {
-            top: calc(36% - 2.5rem);
-            width: calc(60% + 5rem);
-            left: calc(20% - 2.5rem);
-        }
-
-        .row3 {
-            top: calc(97% - 2.5rem);
-            width: calc(40% + 5rem);
-            left: calc(30% - 2.5rem);
-        }
-
-        #scissors {
-            background-image: $scissors_gradient;
-            box-shadow: 0 $shadow_small $scissors_shadow;
-        }
-
-        #spock {
-            background-image: $spock_gradient;
-            box-shadow: 0 $shadow_small $spock_shadow;
-        }
-
-        #rock {
-            background-image: $rock_gradient;
-            box-shadow: 0 $shadow_small $rock_shadow;
-        }
-
-        #paper {
-            background-image: $paper_gradient;
-            box-shadow: 0 $shadow_small $paper_shadow;
-        }
-
-        #lizard {
-            background-image: $lizard_gradient;
-            box-shadow: 0 $shadow_small $lizard_shadow;
-        }
-    }
+    }  
 }
-
-// .flex_right {
-//     display: flex;
-//     justify-content: space-between;
-// }
-
-// .flex_down {
-//     display: flex;
-//     flex-direction: column;
-//     align-content: space-between;
-// }
-
-// #container {
-//     > * {
-//         border: 2px solid red;
-//     }
-// }

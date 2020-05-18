@@ -1,0 +1,38 @@
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: $border_small solid $header_outline;
+    border-radius: $radius_small;
+    padding: $gap_small;
+    
+    .left {
+        padding: $gap_small;
+
+        // p {
+        //     margin: 0;
+        // }
+    }
+
+    .right {
+        background-color: white;
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: $radius_small;
+
+        p {
+            margin: 0;
+            text-align: center;
+            color: $score_text;
+        }
+
+        #score {
+            color: $dark_text;
+            font-size: $font_large;
+            font-weight: $font_heavy;
+        }
+    }
+}
