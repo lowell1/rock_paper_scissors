@@ -14,16 +14,27 @@
 
 body {
     background-image: $bg_gradient;
-    height: 100vh;
+    margin: 0;
 }
 
 #container {
     width: $mobile_width;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
 
     * {
         color: white;
         font-family: $main_font;
         font-weight: $font_light;
     }  
+
+    button {
+        margin: 0 auto;
+        border: $border_small solid white;
+        border-radius: $radius_small;
+        
+    }
 }
